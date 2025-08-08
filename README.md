@@ -1,1 +1,1 @@
-# outline-search-tool
+# wiki-rag-tool
