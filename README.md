@@ -1,3 +1,20 @@
+# ディレクトリ構成
+```
+wiki-rag-tool/
+├── README.md                 # このファイル
+├── main.py                   # RAGシステムのメインプログラム
+├── requirements.txt          # Pythonライブラリの依存関係
+├── Modelfile                 # Ollamaモデル登録用の設定ファイル
+├── venv/                     # Python仮想環境（作成後）
+├── wiki/                     # Wikipediaデータ（転送後）
+├── diff/                     # 差分データ（転送後）
+├── elyza/                    # ELYZAモデルファイル（ダウンロード後）
+│   └── Llama-3-ELYZA-JP-8B-q4_k_m.gguf
+├── glucose/                  # GLuCoSE埋め込みモデル（ダウンロード後）
+└── vector_db/               # Chromaベクトルデータベース（初回実行後）
+```
+
+
 # ringoからtachyonにwikiデータを転送するコマンド
 scp -r -3 [kmcid]@[ringo]:/home/www/inside-cgi/wiki/wiki/ [kmcid]@[tachyon]:~/wiki-rag-tool
 scp -r -3 [irom]@[ringo]:/home/www/inside-cgi/wiki/diff/ [kmcid]@[tachyon]:~/wiki-rag-tool
