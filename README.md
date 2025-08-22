@@ -17,6 +17,7 @@ wiki-rag-tool/
 
 # ringoからtachyonにwikiデータを転送するコマンド
 scp -r -3 [kmcid]@[ringo]:/home/www/inside-cgi/wiki/wiki/ [kmcid]@[tachyon]:~/wiki-rag-tool
+
 scp -r -3 [irom]@[ringo]:/home/www/inside-cgi/wiki/diff/ [kmcid]@[tachyon]:~/wiki-rag-tool
 
 # ollamaのインストール
